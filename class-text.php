@@ -18,7 +18,7 @@
 
 namespace Dekode\Hogan;
 
-if ( ! class_exists( '\\Dekode\\Hogan\\Plugin' ) ) {
+if ( ! class_exists( '\\Dekode\\Hogan\\Core' ) ) {
 	return;
 }
 
