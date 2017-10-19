@@ -1,0 +1,16 @@
+{
+  "name": "dekodeinteraktiv/hogan-text",
+  "description": "WYSIWYG Text Module for Hogan",
+  "homepage": "https://github.com/dekodeinteraktiv/hogan-text",
+  "type": "wordpress-plugin",
+  "license": "GPL-2.0+",
+  "repositories": [
+    {
+        "type": "vcs",
+        "url": "https://github.com/dekodeinteraktiv/hogan-core"
+    }
+  ],
+  "require": {
+    "dekodeinteraktiv/hogan-core": "dev-master"
+  }
+}
