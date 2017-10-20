@@ -9,6 +9,7 @@
       "type":"package",
       "package": {
         "name": "dekodeinteraktiv/hogan-core",
+        "type": "wordpress-plugin",
         "version":"master",
         "source": {
             "url": "https://github.com/DekodeInteraktiv/hogan-core.git",
