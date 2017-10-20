@@ -1,26 +1,6 @@
 <?php
-/**
- * Plugin Name: Hogan Module: Text
- * Plugin URI: https://github.com/dekodeinteraktiv/hogan-text
- * Description: WYSIWYG Text Module for Hogan
- * Version: 1.0.0-dev
- * Author: Dekode
- * Author URI: https://dekode.no
- * License: GPL-3.0
- * License URI: https://www.gnu.org/licenses/gpl-3.0.en.html
- *
- * * Text Domain: hogan-text
- * Domain Path: /languages/
- *
- * @package Hogan
- * @author Dekode
- */
 
 namespace Dekode\Hogan;
-
-if ( ! class_exists( '\\Dekode\\Hogan\\Core' ) ) {
-	return;
-}
 
 if ( ! class_exists( '\\Dekode\\Hogan\\Text' ) ) {
 
@@ -45,16 +25,9 @@ if ( ! class_exists( '\\Dekode\\Hogan\\Text' ) ) {
 
 			$this->name = strtolower( substr( strrchr( __CLASS__, '\\' ), 1 ) );
 			$this->label = __( 'Text', 'hogan-text' );
-			$this->template = apply_filters( 'hogan/module/text/template', __DIR__ . '/assets/template.php' );
+			$this->template = __DIR__ . '/assets/template.php';
 
 			parent::__construct();
-
-			// Plugin hooks
-			add_action( 'plugins_loaded', [ $this, 'load_text_domain' ] );
-		}
-
-		public function load_text_domain() {
-			load_plugin_textdomain( 'hogan-text', false, '/languages' );
 		}
 
 		/**
@@ -93,6 +66,4 @@ if ( ! class_exists( '\\Dekode\\Hogan\\Text' ) ) {
 			parent::load_args_from_layout_content( $content );
 		}
 	}
-
-	new Text;
 }
