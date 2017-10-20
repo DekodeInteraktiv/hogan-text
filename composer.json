@@ -6,8 +6,16 @@
   "license": "GPL-2.0+",
   "repositories": [
     {
-        "type": "vcs",
-        "url": "https://github.com/dekodeinteraktiv/hogan-core"
+      "type":"package",
+      "package": {
+        "name": "dekodeinteraktiv/hogan-core",
+        "version":"master",
+        "source": {
+            "url": "https://github.com/DekodeInteraktiv/hogan-core.git",
+            "type": "git",
+            "reference":"master"
+        }
+      }
     }
   ],
   "require": {
