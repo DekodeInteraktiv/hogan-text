@@ -20,6 +20,7 @@
     }
   ],
   "require": {
-    "dekodeinteraktiv/hogan-core": "dev-master"
+    "dekodeinteraktiv/hogan-core": "dev-master",
+    "woocommerce/woocommerce": "3.2.1"
   }
 }
