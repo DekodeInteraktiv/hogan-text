@@ -23,7 +23,6 @@ if ( ! class_exists( '\\Dekode\\Hogan\\Text' ) ) {
 		 */
 		public function __construct() {
 
-			$this->name = strtolower( substr( strrchr( __CLASS__, '\\' ), 1 ) );
 			$this->label = __( 'Text', 'hogan-text' );
 			$this->template = __DIR__ . '/assets/template.php';
 
