@@ -16,8 +16,6 @@
  * @author Dekode
  */
 
-namespace Dekode\Hogan;
-
 if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly.
 }
@@ -25,10 +23,9 @@ if ( ! defined( 'ABSPATH' ) ) {
 require_once 'class-text.php';
 
 add_action( 'plugins_loaded', function() {
-
 	load_plugin_textdomain( 'hogan-text', false, '/languages' );
+} );
 
-	// TODO: Hva om core ikke er aktivert?
-
-	hogan_register_module( new Text );
+add_action( 'hogan/include_modules', function() {
+	hogan_register_module( new \Dekode\Hogan\Text );
 } );
