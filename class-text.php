@@ -1,6 +1,9 @@
 <?php
-
 namespace Dekode\Hogan;
+
+if ( ! defined( 'ABSPATH' ) ) {
+	exit; // Exit if accessed directly.
+}
 
 if ( ! class_exists( '\\Dekode\\Hogan\\Text' ) ) {
 
