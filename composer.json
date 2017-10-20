@@ -4,21 +4,6 @@
   "homepage": "https://github.com/dekodeinteraktiv/hogan-text",
   "type": "wordpress-plugin",
   "license": "GPL-2.0+",
-  "repositories": [
-    {
-      "type":"package",
-      "package": {
-        "name": "dekodeinteraktiv/hogan-core",
-        "type": "wordpress-plugin",
-        "version":"master",
-        "source": {
-            "url": "https://github.com/DekodeInteraktiv/hogan-core.git",
-            "type": "git",
-            "reference":"master"
-        }
-      }
-    }
-  ],
   "require": {
     "dekodeinteraktiv/hogan-core": "@dev"
   }
