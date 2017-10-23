@@ -27,5 +27,5 @@ add_action( 'plugins_loaded', function() {
 } );
 
 add_action( 'hogan/include_modules', function() {
-	hogan_register_module( new \Dekode\Hogan\Text );
+	hogan_register_module( new \Dekode\Hogan\Text() );
 } );

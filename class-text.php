@@ -1,4 +1,10 @@
 <?php
+/**
+ * Text module class
+ *
+ * @package Hogan
+ */
+
 namespace Dekode\Hogan;
 
 if ( ! defined( 'ABSPATH' ) ) {
@@ -38,14 +44,14 @@ if ( ! class_exists( '\\Dekode\\Hogan\\Text' ) ) {
 		public function get_layout_definition() {
 
 			return [
-				'key' => $this->field_key, // hogan_module_text
+				'key' => $this->field_key, // hogan_module_text.
 				'name' => $this->name,
 				'label' => $this->label,
 				'display' => 'block',
 				'sub_fields' => [
 					[
 						'type' => 'wysiwyg',
-						'key' => $this->field_key . '_content', // hogan_module_text_content
+						'key' => $this->field_key . '_content', // hogan_module_text_content.
 						'name' => 'content',
 						'delay' => true,
 						'tabs' => apply_filters( 'hogan/module/text/content/tabs', 'all' ),
