@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "f89b02e1530dae2a0308c52b82a7af92",
+    "content-hash": "aaf25d10cafe0daa5ac1d70bae68bb8d",
     "packages": [
         {
             "name": "dekodeinteraktiv/hogan-core",
@@ -12,12 +12,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/DekodeInteraktiv/hogan-core.git",
-                "reference": "d01b9b7d607a9ff34a7a32a41c61cc4879e894a5"
+                "reference": "456f3b90d9b9778a0fde9a269639ad58b8a7f64a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/DekodeInteraktiv/hogan-core/zipball/d01b9b7d607a9ff34a7a32a41c61cc4879e894a5",
-                "reference": "d01b9b7d607a9ff34a7a32a41c61cc4879e894a5",
+                "url": "https://api.github.com/repos/DekodeInteraktiv/hogan-core/zipball/456f3b90d9b9778a0fde9a269639ad58b8a7f64a",
+                "reference": "456f3b90d9b9778a0fde9a269639ad58b8a7f64a",
                 "shasum": ""
             },
             "require": {
@@ -30,7 +30,7 @@
             ],
             "description": "Modular Flexible Content System",
             "homepage": "https://github.com/DekodeInteraktiv/hogan-core",
-            "time": "2017-10-23T05:49:26+00:00"
+            "time": "2017-10-23T08:46:51+00:00"
         }
     ],
     "packages-dev": [],
@@ -42,7 +42,7 @@
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
-        "php": ">=5.6"
+        "php": ">=5.5"
     },
     "platform-dev": []
 }
