@@ -23,7 +23,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 require_once 'class-text.php';
 
 add_action( 'plugins_loaded', function() {
-	load_plugin_textdomain( 'hogan-text', false, '/languages' );
+	load_plugin_textdomain( 'hogan-text', false, dirname( plugin_basename( __FILE__ ) ) . '/languages' );
 } );
 
 add_action( 'hogan/include_modules', function() {
