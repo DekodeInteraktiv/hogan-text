@@ -15,7 +15,7 @@ if ( ! defined( 'ABSPATH' ) || ! ( $this instanceof Text ) ) {
 
 ?>
 
-<section class="<?php echo esc_attr( implode( ' ', array_filter( $this->wrapper_classes ) ) ); ?>">
+<section class="<?php echo esc_attr( $this->get_wrapper_classes( true ) ); ?>">
 	<article class="columns">
 		<?php echo wp_kses_post( $this->content ); ?>
 	</article>
