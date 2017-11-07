@@ -41,23 +41,17 @@ if ( ! class_exists( '\\Dekode\\Hogan\\Text' ) ) {
 		/**
 		 * Field definitions for module.
 		 */
-		public function get_layout_definition() {
+		public function get_fields() {
 
 			return [
-				'key' => $this->field_key, // hogan_module_text.
-				'name' => $this->name,
-				'label' => $this->label,
-				'display' => 'block',
-				'sub_fields' => [
-					[
-						'type' => 'wysiwyg',
-						'key' => $this->field_key . '_content', // hogan_module_text_content.
-						'name' => 'content',
-						'delay' => true,
-						'tabs' => apply_filters( 'hogan/module/text/content/tabs', 'all' ),
-						'media_upload' => apply_filters( 'hogan/module/text/content/allow_media_upload', 1 ),
-						'toolbar' => apply_filters( 'hogan/module/text/content/toolbar', 'hogan' ),
-					],
+				[
+					'type' => 'wysiwyg',
+					'key' => $this->field_key . '_content',
+					'name' => 'content',
+					'delay' => true,
+					'tabs' => apply_filters( 'hogan/module/text/content/tabs', 'all' ),
+					'media_upload' => apply_filters( 'hogan/module/text/content/allow_media_upload', 1 ),
+					'toolbar' => apply_filters( 'hogan/module/text/content/toolbar', 'hogan' ),
 				],
 			];
 		}
