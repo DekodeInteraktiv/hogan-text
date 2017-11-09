@@ -66,6 +66,23 @@ if ( ! class_exists( '\\Dekode\\Hogan\\Text' ) ) {
 			$this->content = $content['content'];
 
 			parent::load_args_from_layout_content( $content );
+
+			// Wrap text module content in <div> tag inside the global <section> tag.
+			if ( true === apply_filters( 'hogan/module/text/wrap_content_in_div', true, $this ) ) {
+
+				// CSS classes for <div> wrapper.
+				$classes = apply_filters( 'hogan/module/text/template/div/classes', [], $this );
+				$classes = trim( implode( ' ', array_filter( $classes ) ) );
+
+				add_action( 'hogan/module/text/template/before_include', function() use ( $classes ) {
+					echo sprintf( '<div class="%s">', esc_attr( $classes ) );
+				} );
+
+				add_action( 'hogan/module/text/template/after_include', function() {
+					echo '</div>';
+				} );
+
+			}
 		}
 	}
 }
