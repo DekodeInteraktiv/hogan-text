@@ -13,10 +13,4 @@ if ( ! defined( 'ABSPATH' ) || ! ( $this instanceof Text ) ) {
 	return; // Exit if accessed directly.
 }
 
-?>
-
-<section class="<?php echo esc_attr( $this->get_wrapper_classes( true ) ); ?>">
-	<article class="columns">
-		<?php echo wp_kses_post( $this->content ); ?>
-	</article>
-</section>
+echo wp_kses_post( $this->content );
