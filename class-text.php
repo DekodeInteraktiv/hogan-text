@@ -48,7 +48,9 @@ if ( ! class_exists( '\\Dekode\\Hogan\\Text' ) ) {
 					'type' => 'wysiwyg',
 					'key' => $this->field_key . '_content',
 					'name' => 'content',
+					'label' => __( 'Add content', 'hogan-text' ),
 					'delay' => true,
+					'required' => true,
 					'tabs' => apply_filters( 'hogan/module/text/content/tabs', 'all' ),
 					'media_upload' => apply_filters( 'hogan/module/text/content/allow_media_upload', 1 ),
 					'toolbar' => apply_filters( 'hogan/module/text/content/toolbar', 'hogan' ),
@@ -63,9 +65,16 @@ if ( ! class_exists( '\\Dekode\\Hogan\\Text' ) ) {
 		 */
 		public function load_args_from_layout_content( $content ) {
 
-			$this->content = $content['content'];
+			$this->content = trim( $content['content'] );
 
 			parent::load_args_from_layout_content( $content );
+		}
+
+		/**
+		 * Validate module content before template is loaded.
+		 */
+		public function validate_args() {
+			return ! empty( $this->content );
 		}
 	}
 }
