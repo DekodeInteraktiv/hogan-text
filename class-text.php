@@ -45,13 +45,14 @@ if ( ! class_exists( '\\Dekode\\Hogan\\Text' ) ) {
 
 			return [
 				[
-					'type' => 'wysiwyg',
-					'key' => $this->field_key . '_content',
-					'name' => 'content',
-					'delay' => true,
-					'tabs' => apply_filters( 'hogan/module/text/content/tabs', 'all' ),
+					'type'         => 'wysiwyg',
+					'key'          => $this->field_key . '_content',
+					'name'         => 'content',
+					'delay'        => true,
+					'required'     => 1,
+					'tabs'         => apply_filters( 'hogan/module/text/content/tabs', 'all' ),
 					'media_upload' => apply_filters( 'hogan/module/text/content/allow_media_upload', 1 ),
-					'toolbar' => apply_filters( 'hogan/module/text/content/toolbar', 'hogan' ),
+					'toolbar'      => apply_filters( 'hogan/module/text/content/toolbar', 'hogan' ),
 				],
 			];
 		}
@@ -68,4 +69,4 @@ if ( ! class_exists( '\\Dekode\\Hogan\\Text' ) ) {
 			parent::load_args_from_layout_content( $content );
 		}
 	}
-}
+} // End if().
