@@ -11,7 +11,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly.
 }
 
-if ( ! class_exists( '\\Dekode\\Hogan\\Text' ) ) {
+if ( ! class_exists( '\\Dekode\\Hogan\\Text' ) && class_exists( '\\Dekode\\Hogan\\Module' ) ) {
 
 	/**
 	 * Text module class (WYSIWYG).
