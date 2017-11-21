@@ -3,7 +3,7 @@
  * Plugin Name: Hogan Module: Text
  * Plugin URI: https://github.com/dekodeinteraktiv/hogan-text
  * Description: WYSIWYG Text Module for Hogan
- * Version: 1.0.0-dev
+ * Version: 1.0.0
  * Author: Dekode
  * Author URI: https://dekode.no
  * License: GPL-3.0
