@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "7f12840daaa5220fdf619da022d2f092",
+    "content-hash": "7b086ea8e9eede6c4ebed8f3d2421543",
     "packages": [
         {
             "name": "composer/installers",
@@ -125,19 +125,20 @@
         },
         {
             "name": "dekodeinteraktiv/hogan-core",
-            "version": "dev-master",
+            "version": "1.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/DekodeInteraktiv/hogan-core.git",
-                "reference": "6214300ef147c2e8f9beaccaafb0ca8fae4e5bbb"
+                "reference": "97944b46a0d07c80ff5f04f08f376a178c8991f0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/DekodeInteraktiv/hogan-core/zipball/6214300ef147c2e8f9beaccaafb0ca8fae4e5bbb",
-                "reference": "6214300ef147c2e8f9beaccaafb0ca8fae4e5bbb",
+                "url": "https://api.github.com/repos/DekodeInteraktiv/hogan-core/zipball/97944b46a0d07c80ff5f04f08f376a178c8991f0",
+                "reference": "97944b46a0d07c80ff5f04f08f376a178c8991f0",
                 "shasum": ""
             },
             "require": {
+                "composer/installers": "~1.2",
                 "php": ">=5.5"
             },
             "type": "wordpress-plugin",
@@ -147,15 +148,13 @@
             ],
             "description": "Modular Flexible Content System for ACF Pro",
             "homepage": "https://github.com/DekodeInteraktiv/hogan-core",
-            "time": "2017-10-27T14:15:45+00:00"
+            "time": "2017-11-27T09:51:53+00:00"
         }
     ],
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": {
-        "dekodeinteraktiv/hogan-core": 20
-    },
+    "stability-flags": [],
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
