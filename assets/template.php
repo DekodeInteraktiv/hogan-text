@@ -1,12 +1,17 @@
 <?php
 /**
- * Template for text module
+ * Text Module template
  *
- * $this is an instace of the Text object. Ex. use: $this->content to output content value.
+ * $this is an instace of the Text object.
+ *
+ * Available properties:
+ * $this->heading (string) Module heading.
+ * $this->content (string) HTML content.
  *
  * @package Hogan
  */
 
+declare( strict_types = 1 );
 namespace Dekode\Hogan;
 
 if ( ! defined( 'ABSPATH' ) || ! ( $this instanceof Text ) ) {

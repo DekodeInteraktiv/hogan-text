@@ -5,6 +5,7 @@
  * @package Hogan
  */
 
+declare( strict_types = 1 );
 namespace Dekode\Hogan;
 
 if ( ! defined( 'ABSPATH' ) ) {
@@ -23,7 +24,7 @@ if ( ! class_exists( '\\Dekode\\Hogan\\Text' ) && class_exists( '\\Dekode\\Hogan
 		/**
 		 * WYSIWYG content for use in template.
 		 *
-		 * @var $content
+		 * @var string $content
 		 */
 		public $content;
 
@@ -40,8 +41,10 @@ if ( ! class_exists( '\\Dekode\\Hogan\\Text' ) && class_exists( '\\Dekode\\Hogan
 
 		/**
 		 * Field definitions for module.
+		 *
+		 * @return array $fields Fields for this module
 		 */
-		public function get_fields() {
+		public function get_fields() : array {
 
 			return [
 				[
@@ -65,15 +68,17 @@ if ( ! class_exists( '\\Dekode\\Hogan\\Text' ) && class_exists( '\\Dekode\\Hogan
 		 */
 		public function load_args_from_layout_content( $content ) {
 
-			$this->content = trim( $content['content'] );
+			$this->content = trim( $content['content'] ?? '' );
 
 			parent::load_args_from_layout_content( $content );
 		}
 
 		/**
 		 * Validate module content before template is loaded.
+		 *
+		 * @return bool Whether validation of the module is successful / filled with content.
 		 */
-		public function validate_args() {
+		public function validate_args() : bool {
 			return ! empty( $this->content );
 		}
 	}
