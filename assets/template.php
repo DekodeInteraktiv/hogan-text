@@ -5,7 +5,6 @@
  * $this is an instace of the Text object.
  *
  * Available properties:
- * $this->heading (string) Module heading.
  * $this->content (string) HTML content.
  *
  * @package Hogan

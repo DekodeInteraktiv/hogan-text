@@ -62,15 +62,17 @@ if ( ! class_exists( '\\Dekode\\Hogan\\Text' ) && class_exists( '\\Dekode\\Hogan
 		}
 
 		/**
-		 * Map fields to object variable.
+		 * Map raw fields from acf to object variable.
 		 *
-		 * @param array $content The content value.
+		 * @param array $raw_content Content values.
+		 * @param int   $counter Module location in page layout.
+		 * @return void
 		 */
-		public function load_args_from_layout_content( $content ) {
+		public function load_args_from_layout_content( array $raw_content, int $counter = 0 ) {
 
-			$this->content = trim( $content['content'] ?? '' );
+			$this->content = trim( $raw_content['content'] ?? '' );
 
-			parent::load_args_from_layout_content( $content );
+			parent::load_args_from_layout_content( $raw_content );
 		}
 
 		/**

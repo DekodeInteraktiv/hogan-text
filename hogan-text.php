@@ -4,7 +4,7 @@
  * Plugin URI: https://github.com/dekodeinteraktiv/hogan-text
  * GitHub Plugin URI: https://github.com/dekodeinteraktiv/hogan-text
  * Description: WYSIWYG Text Module for Hogan
- * Version: 1.0.1
+ * Version: 1.0.2
  * Author: Dekode
  * Author URI: https://dekode.no
  * License: GPL-3.0
@@ -29,6 +29,8 @@ add_action( 'hogan/include_modules', __NAMESPACE__ . '\\hogan_text_register_modu
 
 /**
  * Register module text domain
+ *
+ * @return void
  */
 function hogan_text_load_textdomain() {
 	\load_plugin_textdomain( 'hogan-text', false, dirname( plugin_basename( __FILE__ ) ) . '/languages' );
@@ -36,6 +38,8 @@ function hogan_text_load_textdomain() {
 
 /**
  * Register module in Hogan
+ *
+ * @return void
  */
 function hogan_text_register_module() {
 	require_once 'class-text.php';
