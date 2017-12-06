@@ -72,7 +72,7 @@ if ( ! class_exists( '\\Dekode\\Hogan\\Text' ) && class_exists( '\\Dekode\\Hogan
 
 			$this->content = trim( $raw_content['content'] ?? '' );
 
-			parent::load_args_from_layout_content( $raw_content );
+			parent::load_args_from_layout_content( $raw_content, $counter );
 		}
 
 		/**
