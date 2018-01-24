@@ -3,7 +3,7 @@
   "description": "WYSIWYG Text Module for Hogan",
   "homepage": "https://github.com/dekodeinteraktiv/hogan-text",
   "type": "wordpress-plugin",
-  "license": "GPL-3.0",
+  "license": "GPL-3.0-or-later",
   "require": {
     "php": ">=7.0",
     "composer/installers": "~1.2",
