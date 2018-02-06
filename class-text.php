@@ -52,7 +52,7 @@ if ( ! class_exists( '\\Dekode\\Hogan\\Text' ) && class_exists( '\\Dekode\\Hogan
 					'key' => $this->field_key . '_content',
 					'name' => 'content',
 					'label' => __( 'Add content', 'hogan-text' ),
-					'delay' => true,
+					'delay' => apply_filters( 'hogan/module/text/content/delay', true ),
 					'required' => true,
 					'tabs' => apply_filters( 'hogan/module/text/content/tabs', 'all' ),
 					'media_upload' => apply_filters( 'hogan/module/text/content/allow_media_upload', 1 ),

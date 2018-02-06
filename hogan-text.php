@@ -4,7 +4,7 @@
  * Plugin URI: https://github.com/dekodeinteraktiv/hogan-text
  * GitHub Plugin URI: https://github.com/dekodeinteraktiv/hogan-text
  * Description: WYSIWYG Text Module for Hogan
- * Version: 1.0.3
+ * Version: 1.0.4
  * Author: Dekode
  * Author URI: https://dekode.no
  * License: GPL-3.0-or-later
