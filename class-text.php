@@ -33,7 +33,7 @@ if ( ! class_exists( '\\Dekode\\Hogan\\Text' ) && class_exists( '\\Dekode\\Hogan
 		 */
 		public function __construct() {
 
-			$this->label = __( 'Text', 'hogan-text' );
+			$this->label    = __( 'Text', 'hogan-text' );
 			$this->template = __DIR__ . '/assets/template.php';
 
 			parent::__construct();
@@ -48,15 +48,15 @@ if ( ! class_exists( '\\Dekode\\Hogan\\Text' ) && class_exists( '\\Dekode\\Hogan
 
 			return [
 				[
-					'type' => 'wysiwyg',
-					'key' => $this->field_key . '_content',
-					'name' => 'content',
-					'label' => __( 'Add content', 'hogan-text' ),
-					'delay' => apply_filters( 'hogan/module/text/content/delay', true ),
-					'required' => true,
-					'tabs' => apply_filters( 'hogan/module/text/content/tabs', 'all' ),
+					'type'         => 'wysiwyg',
+					'key'          => $this->field_key . '_content',
+					'name'         => 'content',
+					'label'        => __( 'Add content', 'hogan-text' ),
+					'delay'        => apply_filters( 'hogan/module/text/content/delay', true ),
+					'required'     => true,
+					'tabs'         => apply_filters( 'hogan/module/text/content/tabs', 'all' ),
 					'media_upload' => apply_filters( 'hogan/module/text/content/allow_media_upload', 1 ),
-					'toolbar' => apply_filters( 'hogan/module/text/content/toolbar', 'hogan' ),
+					'toolbar'      => apply_filters( 'hogan/module/text/content/toolbar', 'hogan' ),
 				],
 			];
 		}
