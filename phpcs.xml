@@ -5,7 +5,5 @@
 	<arg name="extensions" value="php,js,css" />
 	<config name="testVersion" value="7.0" />
 	<config name="text_domain" value="hogan-text" />
-	<rule ref="Dekode">
-		<exclude name="WordPress.NamingConventions.ValidHookName.UseUnderscores" />
-	</rule>
+	<rule ref="Dekode" />
 </ruleset>
