@@ -32,8 +32,8 @@ before_script:
 script:
   - |
     if [[ "$WP_TRAVISCI" == "phpcs" ]] ; then
-      find . -name '*.php' ! -path "./node_modules/*" ! -path "./vendor/*" ! -path "./wp-content/*" -print0 | xargs -0 -n 1 -P 4 php -l
-      echo Running phpcs with PHP version $TRAVIS_PHP_VERSION…
+      find -L . -name '*.php' -print0 | xargs -0 -n 1 -P 4 php -l
+      echo Running phpcs for PHP version $TRAVIS_PHP_VERSION …
       ./vendor/bin/phpcs --runtime-set testVersion $TRAVIS_PHP_VERSION
     fi
 
