@@ -17,4 +17,4 @@ if ( ! defined( 'ABSPATH' ) || ! ( $this instanceof Text ) ) {
 	return; // Exit if accessed directly.
 }
 
-echo $this->content; //phpcs:ignore
+echo $this->content; // WPCS: XSS OK.
