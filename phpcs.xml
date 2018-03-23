@@ -2,7 +2,7 @@
 <ruleset name="Hogan Coding Standards">
 	<description>Write code using Hogan's standards and Hogan will stay happy!</description>
 	<file>.</file>
-	<arg name="extensions" value="php,js,css" />
+	<arg name="extensions" value="php" />
 	<config name="testVersion" value="7.0" />
 	<config name="text_domain" value="hogan-text" />
 	<rule ref="Dekode" />
