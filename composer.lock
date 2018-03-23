@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "8984eff48af025a36ee85de14b1b2b6d",
+    "content-hash": "2166fbd96906dcf9e725bde1f6a8d1c8",
     "packages": [
         {
             "name": "composer/installers",
@@ -260,16 +260,16 @@
         },
         {
             "name": "dekodeinteraktiv/coding-standards",
-            "version": "dev-master",
+            "version": "0.3.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/DekodeInteraktiv/coding-standards.git",
-                "reference": "59f5e273a4d11245d000850e17c1dc1171e94965"
+                "reference": "89e9a14ffbeb632fbe4a42a5a72648e08aeda573"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/DekodeInteraktiv/coding-standards/zipball/59f5e273a4d11245d000850e17c1dc1171e94965",
-                "reference": "59f5e273a4d11245d000850e17c1dc1171e94965",
+                "url": "https://api.github.com/repos/DekodeInteraktiv/coding-standards/zipball/89e9a14ffbeb632fbe4a42a5a72648e08aeda573",
+                "reference": "89e9a14ffbeb632fbe4a42a5a72648e08aeda573",
                 "shasum": ""
             },
             "require": {
@@ -284,7 +284,7 @@
                 "MIT"
             ],
             "description": "Dekode Coding Standards",
-            "time": "2018-03-15T13:39:25+00:00"
+            "time": "2018-03-23T08:47:02+00:00"
         },
         {
             "name": "squizlabs/php_codesniffer",
@@ -432,9 +432,7 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": {
-        "dekodeinteraktiv/coding-standards": 20
-    },
+    "stability-flags": [],
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
