@@ -128,16 +128,16 @@
         },
         {
             "name": "dekodeinteraktiv/hogan-core",
-            "version": "1.1.3",
+            "version": "1.1.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/DekodeInteraktiv/hogan-core.git",
-                "reference": "632e5e25d4f2e8b60aca3a3ac1fbb6cea5c0a51b"
+                "reference": "7d51095d7c0d568eb177cb28fde36ebdc216039a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/DekodeInteraktiv/hogan-core/zipball/632e5e25d4f2e8b60aca3a3ac1fbb6cea5c0a51b",
-                "reference": "632e5e25d4f2e8b60aca3a3ac1fbb6cea5c0a51b",
+                "url": "https://api.github.com/repos/DekodeInteraktiv/hogan-core/zipball/7d51095d7c0d568eb177cb28fde36ebdc216039a",
+                "reference": "7d51095d7c0d568eb177cb28fde36ebdc216039a",
                 "shasum": ""
             },
             "require": {
@@ -151,7 +151,7 @@
             ],
             "description": "Modular Flexible Content System for ACF Pro",
             "homepage": "https://github.com/DekodeInteraktiv/hogan-core",
-            "time": "2018-03-14T12:19:10+00:00"
+            "time": "2018-03-23T09:10:19+00:00"
         }
     ],
     "packages-dev": [
